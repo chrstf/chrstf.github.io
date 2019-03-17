@@ -5,8 +5,8 @@
 </head>
 <body>
 <?php
-print "<h2>PHP Test</h2>";
-print "Hello world!<br>";
+  print "<h2>PHP Test</h2>";
+  print "Hello world!<br>";
 ?>
 </body>
 </html>
