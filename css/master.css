@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body {
+    background: #999999;
+    padding: 0px;
+    padding-bottom: 6rem;
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    min-height: 100%;
+}
+
+.wrapper {
+    text-align: center;
+    background: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        width: 100%;
+    }
+}
