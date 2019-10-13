@@ -4,19 +4,23 @@
     <meta charset="utf-8">
     <title>My Website</title>
     <link rel="stylesheet" href="css/master.css">
+    <script defer src="scripts/script.js">
+
+    </script>
   </head>
   <body>
-    <div class="wrapper">
-      <h2>What Can JavaScript Do?</h2>
-      <p id="demo">JavaScript can change HTML content.</p>
-      <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
-
-    </div>
-
-
-
-
-
-
+      <button data-modal-target="#modal" type="button" name="button">Open Modal</button>
+      <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="title">
+            Example Modal Test
+          </div>
+          <button data-close-button type="button" name="button" class="close-button">&times;</button>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+      </div>
+      <div id="overlay"></div>
   </body>
 </html>
