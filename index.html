@@ -8,30 +8,40 @@
     <script type="text/javascript" src="scripts/script.js"></script>
   </head>
   <body>
-    <div class="wrapper">
-      <!-- navigation -->
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="overlay-content">
-              <a href="index.html">top</a>
-              <a href="#">second</a>
-              <hr style="background-color: white; width: 15%;">
-              <a href="#">middle</a>
-              <a href="#" >middle</a>
-              <hr style="background-color: white; width: 15%; ?>;">
-              <a href="mailto:somebody@test.com?subject=Test">Contact</a>
-          </div>
-      </div>
-      <!-- navigation END -->
-      <div class="navbar">
-          <div class="navbar-flank" style="text-align: left;">
-              <a href="#" onclick="openNav()" style="font-size:30px;">&#9776; Menu</a>
-          </div>
-          <div class="navbar-centre">
+    <!-- navigation -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">top</a>
+            <a href="#second">second</a>
+            <hr style="background-color: white; width: 15%;">
+            <a href="#first">middle</a>
+            <a href="#" >middle</a>
+            <hr style="background-color: white; width: 15%; ?>;">
+            <a href="mailto:somebody@test.com?subject=Test">Contact</a>
+        </div>
+    </div>
 
-          </div>
-          <div class="navbar-flank" style="text-align: right;">
-          </div>
+    <div class="navbar">
+        <div class="navbar-flank" style="text-align: left;">
+            <a href="#" onclick="openNav()" style="font-size:30px;">&#9776; Menu</a>
+        </div>
+        <div class="navbar-centre">
+
+        </div>
+        <div class="navbar-flank" style="text-align: right;">
+        </div>
+    </div>
+      <!-- navigation END -->
+    <div class="wrapper">
+      <div ></div>
+      <div class="main" id="first" style="background-color:#555555;">
+        first <br>
+        <a href="#second">second</a>
+      </div>
+      <div class="main" id="second" style="background-color:#000000;">
+        second <br>
+        <a href="#first">first</a>
       </div>
     </div>
   </body>
