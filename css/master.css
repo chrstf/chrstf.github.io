@@ -2,24 +2,87 @@
 
 html, body {
   height: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
+  background-color: #FFFFFF;
+  font-family: 'Lora', serif;
+  padding: 0px;
+  margin: 0px 0px 0px 0px
 }
 
-@media screen and (max-width: 600px) {
-
-}
 .wrapper {
-  background-color: #333333;
   width: 100%;
   height: 100%;
 }
- .menu-bar {
-   background-color: #000000;
-   height: 50px;
-   width: 100%;
-   color: #FFFFFF;
-   line-height: 50px;
- }
+
+a {
+    text-decoration: None;
+    color: #333333;
+    cursor: pointer;
+
+}
+.navbar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%;
+    height: 50px;
+    text-align: center;
+}
+
+.navbar-flank {
+    line-height: 50px;
+    float: left;
+    width: 50%;
+}
+.navbar-centre {
+    float: left;
+    width: 0%;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, .95);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    font-size: 36px;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
